@@ -6,3 +6,4 @@ Features that i would like to add before going to production
 	5) Using Templates to provide Messages to Notification service
 	6) TransactionId to be improvised with date and time
 	7) Reversal of amount in case of any failure when transmitting to third party bank
+	8) Rate limiting policies on gateway to avoid fraudelent calls
