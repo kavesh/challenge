@@ -1,0 +1,8 @@
+Features that i would like to add before going to production
+	1) AccountId to be encrypted
+	2) Adding authentication and authorization
+	3) Log transfer lags into transaction transfer table (For Updates)
+	4) Implement MI and Fraud Mangement utility
+	5) Using Templates to provide Messages to Notification service
+	6) TransactionId to be improvised with date and time
+	7) Reversal of amount in case of any failure when transmitting to third party bank
