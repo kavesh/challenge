@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "ea8ea075-e671-4f62-b2eb-33f1d22bff04",
+		"name": "Chalenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountId\": \"ID-12345678\",\r\n    \"balance\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:18080/v1/accounts",
+					"host": [
+						"localhost"
+					],
+					"port": "18080",
+					"path": [
+						"v1",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reterive Account",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:18080/v1/accounts/ID-12345678",
+					"host": [
+						"localhost"
+					],
+					"port": "18080",
+					"path": [
+						"v1",
+						"accounts",
+						"ID-12345678"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Balance Transfer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountId\": \"ID-1234567\",\r\n    \"toAccountId\": \"ID-12345678\",\r\n    \"transferAmount\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:18080//v1/transfers",
+					"host": [
+						"localhost"
+					],
+					"port": "18080",
+					"path": [
+						"",
+						"v1",
+						"transfers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
